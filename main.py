@@ -10,5 +10,5 @@ heure_formatee_reunion = reunion.strftime("%H:%M:%S")
 print("Indian/Reunion --", heure_formatee_reunion)
 
 paris = datetime.now(tz=ZoneInfo("Europe/Paris"))
-heure_formatee_paris = reunion.strftime("%H:%M:%S")
+heure_formatee_paris = paris.strftime("%H:%M:%S")
 print("Europe/Paris --", heure_formatee_paris)
