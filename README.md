@@ -6,7 +6,7 @@ main.py
 * Affiche l'heure à Paris
 
 tmp/
-* ~~exo3-1~~ (fichier compressé)
-* ~~exo3-2~~ (image, déconseillé)
-* exo3-3 (respecte les consignes)
-* ~~exo3-4~~ (environnement personnel)
+* ~~exo3-1~~ 👎 (fichier compressé)
+* ~~exo3-2~~ 😔 (image, déconseillé)
+* exo3-3 👍 (respecte les consignes)
+* ~~exo3-4~~ 😢 (environnement personnel)
