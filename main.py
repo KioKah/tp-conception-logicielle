@@ -3,7 +3,7 @@ from zoneinfo import ZoneInfo
 
 maintenant = datetime.now()
 heure_formatee = maintenant.strftime("%H:%M:%S")
-print(heure_formatee)
+print("Heure locale :", heure_formatee)
 
 reunion = datetime.now(tz=ZoneInfo("Indian/Reunion"))
 heure_formatee_reunion = reunion.strftime("%H:%M:%S")
