@@ -1,8 +1,33 @@
 from datetime import datetime
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 import logging
+import sys
 
-logging.basicConfig(filename="traitement.log", encoding="utf-8", level=logging.DEBUG)
+
+def get_fichier_sortie_args():
+    print(sys.argv)
+    if len(sys.argv) > 1:
+        return sys.argv[1]
+    return None
+
+
+def get_fichier_sortie_env():
+    from dotenv import load_dotenv
+    import os
+
+    load_dotenv()
+    if os.environ.get("LOG_FILE") is not None:
+        return os.environ["LOG_FILE"]
+    return None
+
+
+def get_fichier_sortie():
+    return get_fichier_sortie_args() or get_fichier_sortie_env() or "traitement.log"
+
+
+logging.basicConfig(
+    filename=get_fichier_sortie(), encoding="utf-8", level=logging.DEBUG
+)
 
 
 def afficher_heure(time_zone: str):
