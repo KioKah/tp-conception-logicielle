@@ -1,4 +1,11 @@
-<u>**TP 1 :**</u>
+# <u>TP Conception Logicielle</u>
+
+Télécharger les dépendances : `pip install -r requirements.txt`
+
+Lancer le code : `python main.py`
+
+requirements.txt
+* Liste des packages nécessaires
 
 main.py
 * Affiche l'heure actuelle (dans votre zone)
